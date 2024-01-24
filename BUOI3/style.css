@@ -170,6 +170,11 @@ p
 .skill
 {
     display: flex;
+    width: 100%;
+}
+.skill div
+{
+    width: 50%;
 }
 
 .skill-list
@@ -181,8 +186,6 @@ p
 .skill-list li 
 {
     display: inline-block;
-    list-style: none;
-    text-decoration: none;
     margin-bottom: 15px;
     margin-right: 15px;
     background-color: white;
