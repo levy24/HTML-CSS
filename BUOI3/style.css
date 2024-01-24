@@ -2,6 +2,17 @@
 {
     box-sizing: border-box;
 }
+p
+{
+    font-size: 20px;
+    font-weight: 300;
+    padding-right: 200px;
+    line-height: 30px;
+}
+.container
+{
+    padding-left: 60px;
+}
 /* header */
 .header
 {
@@ -68,6 +79,8 @@
 {
     display: flex;
     align-content: center;
+    padding-left: 70px;
+    margin-bottom: 40px;
 }
 .banner h1
 {
@@ -75,6 +88,7 @@
     margin-left: 20px;
     font-size: 48px;
     font-weight: 600;
+    padding-left: 70px;
 }
 .banner h1 span
 {
@@ -103,11 +117,13 @@
     color: #F26464;
     font-size: 36px;
     font-weight: 800;
+    padding-left: 70px;
 }
 .valuelist span
 {
     letter-spacing: 1px;
     font-size: 16px;
+    padding-left: 70px;
 }
 /* banner */
 
@@ -130,7 +146,7 @@
 .button a 
 {
     margin: auto;
-    width: 17%;
+    width: 20%;
     border: 2px solid #F26464;
     padding: 17px 30px;
     font-size: 13px;
@@ -156,7 +172,13 @@
     display: flex;
 }
 
-.skill .skill-list li 
+.skill-list
+{
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.skill-list li 
 {
     display: inline-block;
     list-style: none;
@@ -185,14 +207,24 @@ span.year
 .office
 {
     font-size: 24px;
-    font-weight: 200;
+    font-weight: lighter;
     margin-bottom: 15px;
+    color: #405262 ;
 }
-.deparment
+span.deparment
 {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 700;
     padding-bottom: 50px;
+}
+.Experience ul li
+{
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    padding-left: 28px;
+    margin-right: 200px;
 }
 /* Experience */
 
@@ -200,7 +232,7 @@ span.year
 .works
 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: #f6f8fa;
     margin: 40px;
@@ -213,4 +245,12 @@ span.year
     margin-bottom: 30px;
     line-height: 36px;
 }
+/* .works p
+{
+    font-size: 20px;
+    font-weight: 300;
+    padding-right: 200px;
+    line-height: 30px;
+} */
+
 /* work */
