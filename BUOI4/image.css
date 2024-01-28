@@ -1,0 +1,134 @@
+.container
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* lily */
+.image-container-lily
+{
+  transition: filter 0.3s ease;
+}
+
+.image-container-lily img 
+{
+  filter: brightness(50%);
+  transition: filter 0.3s ease; 
+}
+
+.image-container-lily:hover img 
+{
+  filter: brightness(100%); 
+}
+
+.lily
+{
+  color: white;
+  position: relative;
+  bottom: 75px;
+  transition: transform 0.3s ease;
+}
+
+.image-container-lily:hover .lily 
+{
+  transform: translateY(-150px); 
+}
+
+.lily h2 span
+{
+  font-weight: 100;
+}
+
+.lily p 
+{
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.image-container-lily:hover .lily p 
+{
+  opacity: 1; 
+}
+/* lily */
+
+/* sadie */
+.image-container-sadie
+{
+  transition: filter 0.3s ease;
+}
+
+.sadie
+{
+  transform: translateY(-250px);
+  color: #484c61;
+}
+
+.image-container-sadie:hover .sadie
+{
+  transform: translateY(-300px); 
+}
+
+.sadie h2 span
+{
+  font-weight: 100;
+}
+
+.sadie p 
+{
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.image-container-sadie:hover .sadie p 
+{
+  opacity: 1; 
+  color: white;
+}
+/* sadie */
+
+/* layla */
+.image-container-layla
+{
+  transition: filter 0.3s ease;
+}
+
+.image-container-layla img 
+{
+  filter: brightness(100%);
+  transition: filter 0.3s ease; 
+}
+
+.image-container-layla:hover img 
+{
+  filter: brightness(75%); 
+}
+
+.layla
+{
+  text-align: center;
+  color: white;
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
+.image-container-layla:hover .layla
+{
+  transform: translateY(-150px); 
+}
+
+.layla h2 span
+{
+  font-weight: 100;
+}
+
+.layla p 
+{
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.image-container-layla:hover .layla p 
+{
+  opacity: 1; 
+}
+/* layla */
