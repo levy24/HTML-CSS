@@ -6,28 +6,43 @@
 body
 {
     font-family: 'Inter', sans-serif;
+    background-color:#FFF; 
+    font-weight: 400;
+    font-style: normal; 
+    color:#373737; 
+    font-size: 14px;
 }
+
+.banner, .Experience, .footer, .head2, .skill-list, .about p
+{
+    margin-left: 70px;
+}
+
 p
 {
-    font-size: 20px;
-    font-weight: 300;
-    padding-right: 200px;
-    line-height: 30px;
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 40px;
+    color: black;
+    margin-bottom: 60px;
 }
-.container
-{
-    padding-left: 60px;
-}
+
+
 /* header */
 .header
 {
-    align-items: center;
-    position: sticky;
-    top: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: white;
-    padding: 70px 0;
+    padding: 70px;
+}
+
+.header-inner
+{
     display: flex;
-    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo
@@ -37,7 +52,7 @@ p
     color: black;
     text-decoration: none;
     align-items: center;
-    justify-content: space-between;
+    font-size: 18px;
 }
 
 .logo span
@@ -50,14 +65,14 @@ p
     width: 40px;
     height: 40px;
     font-weight: 600;
-    font-size: 16px;
     margin-right: 10px;
 }
 .social
 {
     display: flex;
-    margin-left: 1000px;
-    /* justify-content: flex-end; */
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .social li
@@ -65,7 +80,6 @@ p
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
     border-radius: 100%;
     width: 24px;
     height: 24px;
@@ -85,18 +99,19 @@ p
 /* banner */
 .banner
 {
+    margin-top: 180px;
     display: flex;
     align-content: center;
     padding-left: 70px;
-    margin-bottom: 40px;
+    color: black;
 }
 .banner h1
 {
     display: block;
-    margin-left: 20px;
     font-size: 48px;
     font-weight: 600;
     padding-left: 70px;
+    line-height: 60px;
 }
 .banner h1 span
 {
@@ -113,12 +128,10 @@ p
     list-style: none;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0;
     margin-top: 60px;
 }
-.valuelist li
-{
-    margin-right: 60px;
-}
+
 .valuelist b
 {
     display: block;
@@ -136,6 +149,11 @@ p
 /* banner */
 
 /* about */
+.about
+{
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
 .head2
 {
     display: inline-block;
@@ -151,14 +169,18 @@ p
 {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.button a 
+
+.button a
 {
+    display: inline-block;
     margin: auto;
     width: 20%;
     border: 2px solid #F26464;
     padding: 17px 30px;
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 13px;
     font-weight: 600;
     letter-spacing: 3px;
     color: #F26464;
@@ -172,6 +194,7 @@ p
     background-color: #F26464;
     color: white;
 }
+
 /* about */
 
 /* skill */
@@ -179,8 +202,9 @@ p
 .skill
 {
     display: flex;
+    flex: 0 0 auto;
     width: 100%;
-    padding-bottom: 150px;
+    padding-bottom: 105px;
 }
 .skill div
 {
@@ -192,7 +216,6 @@ p
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0;
     align-items: center;
     margin-top: 11px;
 }
@@ -216,6 +239,7 @@ p
 .Experience
 {
     display: flex;
+    padding-top: 15px;
 }
 span.year
 {
@@ -233,6 +257,7 @@ span.year
 span.department
 {
     font-size: 18px;
+    color: #373737;
     font-weight: 500;
     padding-bottom: 30px;
 }
@@ -241,6 +266,12 @@ span.department
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
+}
+.Experience ul
+{
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
 }
 
 .Experience ul li
@@ -258,18 +289,32 @@ span.department
 .works
 {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     background-color: #f6f8fa;
-    margin: 40px;
-    padding: 40px;
+    margin-bottom: 40px;
+    padding-left: 70px;
+    padding-top: 40px;
+    padding-right: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
-.work-tile
+.work-title
 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 30px;
     line-height: 36px;
+    color: black;
+}
+.works p
+{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+}
+.works.button
+{
+    margin-top: 20px;
 }
 
 /* work */
