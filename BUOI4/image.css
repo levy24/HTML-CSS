@@ -1,23 +1,43 @@
+body
+{
+  font-family: 'Raleway', Arial, sans-serif;
+  background-color: #2f3238;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+  display: block;
+}
+
 .container
 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-left: 40px;
+  margin-top: 40px;
 }
+
+.image-container-lily, .image-container-sadie, .image-container-layla
+{
+  display: block;
+}
+
 /* lily */
 .image-container-lily
 {
-  transition: filter 0.3s ease;
+  width: 480px;
+  overflow: hidden;
+  transition: filter 0.5s ease-in-out;
 }
 
 .image-container-lily img 
 {
-  filter: brightness(50%);
-  transition: filter 0.3s ease; 
+  width: 520px;
+  transform: translateX(-40px);
+  filter: brightness(70%);
+  transition: filter 0.5s ease-out; 
 }
 
 .image-container-lily:hover img 
 {
+  transform: translateX(0px);
   filter: brightness(100%); 
 }
 
@@ -25,13 +45,14 @@
 {
   color: white;
   position: relative;
-  bottom: 75px;
-  transition: transform 0.3s ease;
+  margin-left: 40px;
+  transform: translateY(-150px); 
+  transition: transform 0.3s linear;
 }
 
 .image-container-lily:hover .lily 
 {
-  transform: translateY(-150px); 
+  transform: translateY(-180px); 
 }
 
 .lily h2 span
@@ -42,7 +63,9 @@
 .lily p 
 {
   opacity: 0; 
-  transition: opacity 0.3s ease; 
+  font-size: 68.5%;
+  letter-spacing: 1px;
+  transition: opacity 0.5s ease; 
 }
 
 .image-container-lily:hover .lily p 
@@ -54,19 +77,29 @@
 /* sadie */
 .image-container-sadie
 {
-  transition: filter 0.3s ease;
+  width: 480px;
 }
-
+.image-container-sadie img
+{
+  filter: brightness(100%);
+  transition: filter 0.5s ease-in;
+}
+.image-container-sadie:hover img
+{
+  filter: brightness(70%);
+}
 .sadie
 {
   transform: translateY(-250px);
   color: #484c61;
+  text-align: center;
 }
-
 .image-container-sadie:hover .sadie
 {
   transform: translateY(-300px); 
+  color: white;
 }
+
 
 .sadie h2 span
 {
@@ -75,8 +108,9 @@
 
 .sadie p 
 {
+  transform: translateY(150px);
   opacity: 0; 
-  transition: opacity 0.3s ease; 
+  transition: opacity 0.5s ease-in; 
 }
 
 .image-container-sadie:hover .sadie p 
@@ -89,7 +123,7 @@
 /* layla */
 .image-container-layla
 {
-  transition: filter 0.3s ease;
+  width: 480px;
 }
 
 .image-container-layla img 
@@ -105,15 +139,21 @@
 
 .layla
 {
+  transform: translateY(-250px);
   text-align: center;
   color: white;
-  position: absolute;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease-in;
 }
 
 .image-container-layla:hover .layla
 {
-  transform: translateY(-150px); 
+  transform: translateY(-240px); 
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 30px 30px 30px;
+  width: 70%;
+  height: 80%;
+  border: 2px solid white;
 }
 
 .layla h2 span
@@ -123,6 +163,7 @@
 
 .layla p 
 {
+  text-align: center;
   opacity: 0; 
   transition: opacity 0.3s ease; 
 }
