@@ -1,0 +1,484 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: 'Inter', sans-serif;
+    background-color: #FFF;
+    font-weight: 400;
+    font-style: normal;
+    color: #373737;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+p 
+{
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 40px;
+    color: black;
+    margin-bottom: 60px;
+}
+
+img 
+{
+    max-width: 100%;
+    height: auto;
+}
+/* Chỉnh sửa width của ảnh */
+figure
+{
+    flex: 0 0 auto;
+    width: 42%;
+}
+
+/* header */
+.header 
+{
+    position: fixed;
+    top: 0;
+    width: 85%;
+    background-color: white;
+    padding: 20px 0px;
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); */
+}
+
+.header-inner 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo 
+{
+    display: flex;
+    letter-spacing: 3px;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 18px;
+}
+
+.logo span 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.social 
+{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social li 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    background-color: #F26464;
+    color: white;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+.social li:hover 
+{
+    background-color: black;
+    color: white;
+}
+
+/* header */
+
+/* banner */
+.banner 
+{
+    margin-top: 180px;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    color: black;
+}
+
+.banner h1 
+{
+    display: block;
+    font-size: 48px;
+    font-weight: 600;
+    padding-left: 70px;
+    line-height: 60px;
+}
+
+.banner h1 span 
+{
+    display: block;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.valuelist 
+{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.valuelist b 
+{
+    display: block;
+    color: #F26464;
+    font-size: 36px;
+    font-weight: 800;
+    margin-right: 60px;
+}
+
+.valuelist span 
+{
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-right: 60px;
+}
+
+/* banner */
+
+/* about */
+.about 
+{
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.head2 
+{
+    display: inline-block;
+    border-bottom: 3px solid #F26464;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 7px;
+    margin-bottom: 23px;
+    color: black;
+}
+
+.text-center 
+{
+    text-align: center !important;
+}
+
+.button 
+{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+a.button 
+{
+    margin: auto;
+    border: 2px solid #F26464;
+    padding: 17px 30px;
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #F26464;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 60px;
+    text-decoration: none;
+}
+
+a.button:hover 
+{
+    background-color: #F26464;
+    color: white;
+}
+/* about */
+
+/* skill */
+.skill 
+{
+    display: flex;
+    flex: 0 0 auto;
+    padding-bottom: 105px;
+    flex-wrap: wrap;
+}
+
+.skill div 
+{
+    width: 50%;
+}
+
+.skill-list 
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    align-items: center;
+    margin-top: 11px;
+}
+
+.skill-list li 
+{
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    background-color: white;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 27px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+/* skill */
+
+/* Experience */
+.Experience 
+{
+    display: flex;
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+
+.Experience div 
+{
+    width: 50%;
+}
+
+span.year 
+{
+    font-size: 14px;
+    color: #373737;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.office 
+{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+span.department 
+{
+    font-size: 18px;
+    color: #373737;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.Experience p 
+{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.Experience ul 
+{
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.Experience ul li 
+{
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    padding-left: 28px;
+    margin-bottom: 20px;
+}
+/* Experience */
+
+/* work */
+.works 
+{
+    display: flex;
+    background-color: #f6f8fa;
+    margin-bottom: 40px;
+    padding-left: 70px;
+    padding-top: 40px;
+    padding-right: 70px;
+    flex-wrap: nowrap;
+}
+
+.work-title 
+{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 36px;
+    color: black;
+}
+
+.works p 
+{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    width: 58.33333333%;
+}
+
+.works.button 
+{
+    margin-top: 20px;
+}
+/* work */
+
+/* footer */
+.footer 
+{
+    background-color: black;
+    padding: 120px 0px;
+    text-align: center;
+}
+
+.footer section 
+{
+    padding-bottom: 97px;
+}
+
+.footer section span 
+{
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.footer section h4 
+{
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.footer section p 
+{
+    color: white;
+    letter-spacing: 1.13px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.copyright 
+{
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.copyright a 
+{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.copyright a:hover 
+{
+    color: #F26464;
+}
+
+/* footer */
+
+/* media queries */
+
+@media screen and (max-width: 768px) 
+{
+    .header {padding: 15px 0;}
+
+    .banner, .about, .skill, .Experience, .works {padding-left: 10px;padding-right: 10px;}
+
+    .logo:not(span) { font-size: 0;}
+
+    .banner {flex-wrap: wrap;}
+
+    .banner figure {padding: 30px 0; }
+
+    .banner h1 { padding-left: 0; padding-right: 0;}
+
+    .banner div h1 {padding-bottom: 0; font-size: 30px; line-height: 40px;}
+
+    .valuelist { margin-top: 20px; }
+
+    .valuelist li { margin-right: 30px; }
+
+    .valuelist b { font-size: 30px; }
+
+    .valuelist span { font-size: 14px; }
+
+    .about { padding-bottom: 60px; }
+
+    .about p { font-size: 15px; line-height: 30px; margin-bottom: 30px;}
+
+    .skill-list li { margin-right: 10px; margin-bottom: 10px; font-size: 14px; }
+
+    .skill div, .Experience div { margin-bottom: 40px; width: 100%; }
+
+    .skill, .works, .Experience { padding-bottom: 0; }
+
+    .Experience div {  padding-right: 0; }
+
+    .works { padding: 30px; flex-wrap: wrap; }
+
+    .works p { font-size: 15px; line-height: 30px; width: 100%; }
+
+    .footer { padding: 60px 10px; }
+
+    .footer section h4 { font-size: 40px; }
+
+    .copyright { font-size: 14px; }
+
+    .footer section { padding-bottom: 30px; }
+
+    .button { padding: 11px 10px; }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .works div { padding-right: 30px; }
+}
+
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    .banner div { padding-right: 0; }
+
+    .works div { padding-right: 30px; padding-bottom: 60px; }
+
+}
+@media (max-width: 1200px)
+{
+    .container{max-width: 1140px;}
+}
+/* media queries */
