@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        //khai báo biến, kiểu dữ liệu 
+        let a = 10;
+        const b = 1;
+        var c = 5;
+
+        const s1 = Symbol("fffj");
+        const s2 = Symbol("fffj");
+
+        if(true)
+        {//hoisting
+            let ex1 = 1; //chỉ phụ thuộc trong scope, biến sử dụng duy nhất, console trước sẽ gây lỗi
+            var ex2 = 2;//sử dụng được ra bên ngoài trong phạm vi function, sử dụng nhiều lần với cùng 1 biến, console trước ghi ra giá trị underfined
+            ex2 = ex2 + 1;
+        }
+
+        ex2 = ex2 + 1;
+        console.log (ex2);
+        // const data={
+        //     name: vy,
+        //     age: 20
+        // }
+
+        console.log(typeof(a));
+
+        let a1 = 2;
+        let b1 = 2;
+        let c1 = a1**b1;
+        console.log(c1);
+
+        // == so sánh giá trị, === so sánh giá trị và kiểu dữ liệu 
+
+        let b2 = '2';
+        let c = parseInt(b2);//pareInt chuyển đổi kiểu dữ liệu sang int hoặc = +, + " " kiểu dữ liệu sang string hoặc tên biến.tostring()
+        console.log();// a= boolean(a) thì a mới ép kiểu thành boolean, false, 0, "", undefined, null, NaN
+
+        let v = 2n;
+        console.log(v);
+
+        function tong(a, b) {
+            return a+b;
+        }
+        console.log(tong(1,2));
+        let u = function()
+        {
+            console.log("nfjjfjf");
+        }
+        u();
+        a = (p, d) => {
+            console.log(d+p);
+        }//a=b => b+4
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -320,12 +320,12 @@ span.department {
 }
 
 .works div {
-    padding-right: 70px;
+    padding-right: 120px;
     padding-bottom: 20px;
+    width: 58.33333333%;
 }
 
 .works p {
-    width: 58.33333333%;
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;

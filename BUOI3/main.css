@@ -1,0 +1,62 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.flex-container
+{
+    border: 1px solid black;
+    padding: 10px 30px;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+ul li
+{
+    text-decoration: none;
+    list-style-type: none;
+}
+.item
+{
+    width: 80px;
+    height: 30px;
+    background: red;
+    color: black;
+    padding: 10px 30px;
+    border:  1px solid black;
+}
+
+.item1
+{
+    background: aqua;
+    flex-shrink: 1;
+}
+
+.item2
+{
+    background: blueviolet;
+    flex-shrink: 2;
+}
+
+.item3
+{
+    background: green;
+    flex-shrink: 3;
+}
+
+.item4
+{
+    background: red;
+    flex-shrink: 4;
+}
+
+.item5
+{
+    background: pink;
+    flex-shrink: 5;
+}

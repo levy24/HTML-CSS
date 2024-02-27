@@ -1,9 +1,12 @@
-.header-logo, .banner-img, .about h2, .about p, .skill-section
-{
+.header-logo,
+.banner-img,
+.about h2,
+.about p,
+.skill-section {
     margin-left: 70px;
 }
-.header-logo
-{
+
+.header-logo {
     display: inline-block;
     background-color: black;
     margin-right: 12px;
@@ -17,90 +20,93 @@
     font-size: 18px;
     font-weight: 600;
 }
-.social
-{
-    display: inline-block;
+
+.social {
+    display: flex;
+    gap: 10px;
+    width: 100px;
+    height: 40px;
     margin-left: 1100px;
 }
 
-.social a
-{
+.social a {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     text-decoration: none;
     border-radius: 100%;
-    height: 500px;
-    width: 300px;
+    height: 30px;
+    width: 30px;
     color: white;
-    background:#F26464;
+    background: #F26464;
+    font-size: 20px;
 }
 
-.social a:hover
-{
+.social a:hover {
     color: white;
     background: black;
 }
 
-.banner-img
-{
+.banner-img {
     display: inline-block;
     margin-top: 40px;
     margin-right: 50px;
 }
-.banner-info
-{
+
+.banner-info {
     display: inline-block;
 }
-h1
-{
+
+h1 {
     margin-top: 20px;
     font-size: 60px;
 }
-.hi-there
-{
+
+.hi-there {
     font-size: 18px;
 }
-.valulist
-{
+
+.valulist {
     display: inline-block;
     margin: 20px;
 }
 
-.valulist p
-{
+.valulist p {
     color: #F26464;
     margin: 0px;
     padding: 0px;
     font-size: 36px;
     font-weight: 800;
 }
-.valulist span
-{
+
+.valulist span {
     letter-spacing: 1px;
     font-size: 20px;
 }
 
-h2
-{
-    display: inline-block; 
-    font-weight: 700; 
-    color: black; 
-    letter-spacing: 1px; 
-    font-size: 16px; 
-    border-bottom: 3px solid #F26464; 
-    padding-bottom: 7px; 
+h2 {
+    display: inline-block;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-bottom: 3px solid #F26464;
+    padding-bottom: 7px;
     margin-bottom: 23px;
     margin-top: 23px;
 }
 
-.about p
-{
+.about p {
     color: #373737;
     font-size: 24px;
     line-height: 40px;
     font-weight: 300;
     margin-bottom: 60px;
 }
-.button
-{
+
+.button {
     margin: auto;
     width: 15%;
     border: 2px solid #F26464;
@@ -113,25 +119,22 @@ h2
     margin-bottom: 40px;
     border-radius: 60px;
 }
-.button:hover
-{
+
+.button:hover {
     color: white;
     background-color: #F26464;
 }
 
-.skill-section
-{
+.skill-section {
     display: inline-block;
 }
 
-.skill
-{
+.skill {
     display: inline-block;
     text-align: center;
 }
 
-.skill-item
-{
+.skill-item {
     display: inline-block;
     margin: 10px;
     margin-right: 15px;
