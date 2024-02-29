@@ -18,7 +18,7 @@ function forEachByFor(array) {
 }
 forEachByFor(numbers);
 
-Find
+// Find
 function findByFor(array) {
     for (let i = 0; i < array.length; i++) {
         if (array[i] > 3) {
@@ -29,7 +29,7 @@ function findByFor(array) {
 }
 console.log(findByFor(numbers));
 
-Filter
+// Filter
 function filterByFor(array) {
     const filteredArray = [];
     for (let i = 0; i < array.length; i++) {
@@ -42,7 +42,7 @@ function filterByFor(array) {
 console.log(filterByFor(numbers)); 
 
 
-FindIndex
+// FindIndex
 function findIndexByFor(array) {
     for (let i = 0; i < array.length; i++) {
         if (array[i] === 3) {
@@ -53,7 +53,7 @@ function findIndexByFor(array) {
 }
 console.log(findIndexByFor(numbers));
 
-Reduce
+// Reduce
 function reduceByFor(array) {
     let value = 0;
     for (let i = 0; i < array.length; i++) {
