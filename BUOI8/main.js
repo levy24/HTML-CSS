@@ -1,67 +1,67 @@
 const numbers = [1, 2, 3, 4, 5];
 
-// //map
-// function mapByFor(array) {
-//     const newArray = [];
-//     for (let i = 0; i < array.length; i++) {
-//         newArray.push(array[i] * 2);
-//     }
-//     return newArray;
-// }
-// console.log(mapByFor(numbers));
+//map
+function mapByFor(array) {
+    const newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        newArray.push(array[i] * 2);
+    }
+    return newArray;
+}
+console.log(mapByFor(numbers));
 
-// //forEach
-// function forEachByFor(array) {
-//     for (let i = 0; i < array.length; i++) {
-//         console.log(`${i}: ${array[i]}`);
-//     }
-// }
-// forEachByFor(numbers);
+//forEach
+function forEachByFor(array) {
+    for (let i = 0; i < array.length; i++) {
+        console.log(`${i}: ${array[i]}`);
+    }
+}
+forEachByFor(numbers);
 
-//Find
-// function findByFor(array) {
-//     for (let i = 0; i < array.length; i++) {
-//         if (array[i] > 3) {
-//             return array[i];
-//         }
-//     }
-//     return undefined;
-// }
-// console.log(findByFor(numbers));
+Find
+function findByFor(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > 3) {
+            return array[i];
+        }
+    }
+    return undefined;
+}
+console.log(findByFor(numbers));
 
-//Filter
-// function filterByFor(array) {
-//     const filteredArray = [];
-//     for (let i = 0; i < array.length; i++) {
-//         if (array[i] > 3) {
-//             filteredArray.push(array[i]);
-//         }
-//     }
-//     return filteredArray;
-// }
-// console.log(filterByFor(numbers)); 
+Filter
+function filterByFor(array) {
+    const filteredArray = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > 3) {
+            filteredArray.push(array[i]);
+        }
+    }
+    return filteredArray;
+}
+console.log(filterByFor(numbers)); 
 
 
-//FindIndex
-// function findIndexByFor(array) {
-//     for (let i = 0; i < array.length; i++) {
-//         if (array[i] === 3) {
-//             return i;
-//         }
-//     }
-//     return -1;
-// }
-// console.log(findIndexByFor(numbers));
+FindIndex
+function findIndexByFor(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === 3) {
+            return i;
+        }
+    }
+    return -1;
+}
+console.log(findIndexByFor(numbers));
 
-//Reduce
-// function reduceByFor(array) {
-//     let value = 0;
-//     for (let i = 0; i < array.length; i++) {
-//         value += array[i];
-//     }
-//     return value;
-// }
-// console.log(reduceByFor(numbers));
+Reduce
+function reduceByFor(array) {
+    let value = 0;
+    for (let i = 0; i < array.length; i++) {
+        value += array[i];
+    }
+    return value;
+}
+console.log(reduceByFor(numbers));
 
 const a=['a', 'b', 'c']
 const b =[1, 2, 3]
