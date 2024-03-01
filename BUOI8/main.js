@@ -63,6 +63,8 @@ function reduceByFor(array) {
 }
 console.log(reduceByFor(numbers));
 
+
+//bài tâpj file ảnh 
 const a=['a', 'b', 'c']
 const b =[1, 2, 3]
 console.log(b.concat(a));
