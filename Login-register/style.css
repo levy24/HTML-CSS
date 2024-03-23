@@ -10,6 +10,11 @@
     width: 100%;
 }
 
+/* .S-orange {
+    width: 362px;
+    height: 510px;
+} */
+
 .box {
     position: absolute;
     top: 50%;
@@ -37,7 +42,7 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.image-grid::after {
+.image-grid::after{
     background: #D1DFECE5;
     content: "";
     position: absolute;
@@ -91,13 +96,13 @@ input[type="text"] {
     margin: 12px 0;
 }
 
-#loginBtn {
+#loginBtn{
     border-bottom: 2px solid #11698E;
     background: #fff;
     font-weight: 300;
 }
 
-#registerBtn {
+#registerBtn{
     background: #fff;
 }
 
@@ -111,7 +116,7 @@ input[type="text"] {
     padding: 1px 95px;
     color: #fff;
     letter-spacing: 2px;
-
+    
 }
 
 #log:hover {
@@ -119,3 +124,9 @@ input[type="text"] {
     color: #11698E;
     border: 1px solid #11698E;
 }
+
+/* .S-blue {
+    width: 150px;
+    height: 350px;
+    z-index: -100;
+} */
