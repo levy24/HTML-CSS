@@ -4,11 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const log = document.getElementById('log');
 
     registerBtn.addEventListener("click", function () {
+        registerBtn.style.borderBottom = "2px solid #11698E";
+        loginBtn.style.borderBottom ="none";
         log.textContent = "Register";
     });
 
     loginBtn.addEventListener("click", function () {
         log.textContent = "Login";
+        loginBtn.style.borderBottom = "2px solid #11698E";
+        registerBtn.style.borderBottom ="none";
     });
 
     log.addEventListener("click", function () {

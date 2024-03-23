@@ -10,12 +10,6 @@
     width: 100%;
 }
 
-.Sorange {
-    height: 350px;
-    z-index: -100;
-    transform: translate(440%, -30%);
-}
-
 .box {
     position: absolute;
     top: 50%;
@@ -32,14 +26,8 @@
     /* width: 100%; */
 }
 
-.image-container {
-    padding: 0 70px;
-    transform: translate(-20%, -100%);
-    width: 50%;
-}
-
-.image-container svg {
-    transform: translate(80%, 120%);
+.box svg {
+    transform: translateX(-200%);
 }
 
 .image-grid {
@@ -47,12 +35,9 @@
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    width: 10px;
-    height: 10px;
-    filter: brightness(40%);
 }
 
-.image-grid::after{
+.image-grid::after {
     background: #D1DFECE5;
     content: "";
     position: absolute;
@@ -67,7 +52,7 @@
 
 .form_box {
     padding: 50px 60px 70px;
-    transform: translateX(10%);
+    transform: translateX(-20%);
 }
 
 .input {
@@ -89,10 +74,7 @@ input[type="text"] {
     display: flex;
     justify-content: space-around;
     margin-bottom: 12px;
-}
-
-.btn-field button:active {
-    text-decoration: underline;
+    background: #fff;
 }
 
 .btn-field button {
@@ -109,6 +91,16 @@ input[type="text"] {
     margin: 12px 0;
 }
 
+#loginBtn {
+    border-bottom: 2px solid #11698E;
+    background: #fff;
+    font-weight: 300;
+}
+
+#registerBtn {
+    background: #fff;
+}
+
 #logcheck {
     margin-right: 8px;
 }
@@ -119,16 +111,11 @@ input[type="text"] {
     padding: 1px 95px;
     color: #fff;
     letter-spacing: 2px;
+
 }
 
 #log:hover {
     background-color: #fff;
     color: #11698E;
     border: 1px solid #11698E;
-}
-
-.Sblue {
-    transform: translateY(100%);
-    height: 350px;
-    z-index: -100;
 }

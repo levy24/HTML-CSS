@@ -2,7 +2,7 @@
 // let data = "        hello        "
 // console.log(data.trim());
 
-// //cắt đến khi gặp ký tự 
+// //tách chuỗi thành mảng
 // let text = "a,b,c,d,e,f";
 // const data1 = text.split(",");
 // console.log(data1);
@@ -58,7 +58,7 @@
 // console.log(date.getMonth() + 1)
 
 // //Math
-// let abcd = 10.4//trunc lấy phần nguyên, floor lấy giá trị nhỏ hơn nhưng lớn nhất
+// let abcd = 10.4//trunc lấy phần nguyên, floor làm tròn dưới 
 // console.log(Math.trunc(abcd))
 // console.log(Math.ceil(abcd))
 

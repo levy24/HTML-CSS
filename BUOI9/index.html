@@ -1,0 +1,93 @@
+<!-- DOM structure
+DOM document
+DOM methods
+Node List -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hihi{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <script src="main.js"></script>
+    <div class="container">
+        <div onclick="handleClick" id="hello">
+            Hello
+            <button onclick="handleClickHi(event)">Hi</button>
+        </div>
+        <p id="hi"></p>
+        <a id="link"  class="link-to-w3" href="https://www.w3schools.com/js/js_htmldom_methods.asp">link to W3School</a>
+        <ul class="flex-container">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+        </ul>
+    </div>
+
+    <script>
+        const a = document.getElementById('hello');
+        // a.addEventListener("click", function()
+        // {
+        //     console.log("hello world");
+        //     document.getElementById('hi').style.display ='block'
+        // })
+
+        // a.removeEventListener("click", function()
+        // {
+        //     console.log("hello world");
+        //     document.getElementById('hi').style.display ='block'
+        // })
+        function handleClick(){
+            console.log(("hellp"));
+        }
+        function handleClickHi(event)
+        {
+            //ngưng lan truyền của phần tử con 
+            event.stopPropagation()
+            console.log(Hi);
+        }
+        // console.log(a.href)
+        // a.title = 'link to w3'//thêm thuộc tính khi hover vào sẽ hiển thị
+        // a.setAttribute("title", "link to w3")// có thể tự thêm attribute 
+        // a.removeAttribute("title")
+        // a.classList.add ('hihi')
+        // console.log(a.className)
+        // a.style.color = "black"
+        // let b = document.getElementsByClassName('flex-container');
+        // const c = document.querySelectorAll('#hello')
+        // const e = document.querySelectorAll('.flex-container')
+        // const d = document.getElementsByTagName('li')
+        // console.log(e);
+
+        // a.textContent = 'hi'//thay đổi string của phần tử 
+        // a.innerText = 'huhu'//giống textContent
+        // a.outerText = '<p> olala </p>'//thay đổi cả element h1
+        // a.innerHTML = '<p> olala </p>'//thêm 1 element (thẻ p vào h1)
+
+        //thêm 1 phương thức element
+        // let f = document.createElement('button')//chỉ tạo chưa gắn vào DOM
+        // f.textContent = 'click me'
+        // a.appendChild(f)//gắn vào DOM, thêm 1 node
+        // let f1 = document.createElement('button')//chỉ tạo chưa gắn vào DOM
+        // f1.textContent = 'click'
+        // a.appendChild(f1)//gắn vào DOM, thêm 1 node
+        // a.append('vy ne')//them string hoặc 1 node 
+        // a.replaceChild(f1, f)
+        // a.remove();//xóa hết thẻ cha dẫn tới thẻ con cũng xóa
+        // a.removeChild(f)
+        // b.removeChild(d[2])//chưa thực hiện được 
+        // a.insertAdjacentElement("afterbegin", f)
+        // a.insertBefore(f1, f)
+        // document.write("<p> hehheheh </p>")
+    </script>
+</body>
+</html>
