@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-task">
+            <div class="logo">
+                <img src="task-logo.svg" alt="logo-task">
+            </div>
+            <div class="content">
+                <img src="task-content.svg" alt="logo-task">
+                <button class="new_task">+ New tasks</button>
+            </div>
+        </div>
+        <div class="list">
+            <dis class="todo">
+                <p>Todo</p>
+            </dis>
+            <div class="doing">
+                <p>Doing</p>
+            </div>
+            <div class="completed">
+                <p>Completed</p>
+            </div>
+            <div class="blocked">
+                <p>Blocked</p>
+            </div>
+        </div>
+        <div id="taskForm" style="display: none;">
+            <span class="close">×</span>
+            <p>Add new to do</p>
+            <input type="text" placeholder="Category Etc:Marketing..."><br>
+            <input type="text" placeholder="Title"><br>
+            <textarea placeholder="Content" cols="50" rows="5"></textarea><br>
+            <button id="addTaskBtn">Submit</button>
+        </div>
+    </div>
+    <script src="main1.js"></script>
+</body>
+
+</html>

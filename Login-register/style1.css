@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.logo-task {
+    position: relative;
+    margin: 38px 15px 38px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new_task {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: grey;
+    font-size: 16px;
+    padding: 7px;
+}
+
+.new_task:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.todo,
+.doing,
+.completed,
+.blocked {
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 15px;
+}
+
+.todo::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: #00A6DA;
+    margin-top: 5px;
+}
+
+.doing::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: #CCAC038F;
+    margin-top: 5px;
+}
+
+.completed::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: #3BC057;
+    margin-top: 5px;
+}
+
+.blocked::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: #E74C3C;
+    margin-top: 5px;
+}
+
+.todo p {
+    background: #00A6DA;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.doing p {
+    background: #CCAC038F;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+}
+
+.completed p {
+    background: #3BC057;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+}
+
+.blocked p {
+    background: #E74C3C;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+}
+
+#taskForm {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+#taskForm span {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+#taskForm p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#taskForm input,
+#taskForm textarea,
+#taskForm button {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.task {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.task.box-shadow {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.task h3 {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #00A6DA;
+    background: white;
+    padding-left: 20px;
+}
+
+.task .title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    background: white;
+    padding-left: 20px;
+}
+
+
+.task .content {
+    font-size: 10px;
+    color: #555;
+    background: white;
+    padding-left: 20px;
+}
+
+.task .date-time {
+    font-size: 10px;
+    color: #888;
+    background: white;
+    padding-left: 20px;
+}

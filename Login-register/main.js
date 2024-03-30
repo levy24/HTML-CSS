@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
             alert('Please enter your password and username');
             return;
         }
-        if (password == "") {
+        else if (password == "") {
             alert("Please enter your password");
             return;
         }
-        if (username == "") {
+        else if (username == "") {
             alert("Please enter your username");
             return;
         }
